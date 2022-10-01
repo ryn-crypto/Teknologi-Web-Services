@@ -13,3 +13,13 @@ class Manusia {
     print('$nama makan nasi'); // menggunakan "$" untuk menggunakan variable
   }
 }
+
+// awal inheritance
+class ManusiaMilenial extends Manusia {
+  String email = '';
+
+  ManusiaMilenial(String email) : super(email);
+  void info() {
+    print('Nama : $nama , Email : $email');
+  }
+} // Akhir inheritance
